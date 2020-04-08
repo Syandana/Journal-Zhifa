@@ -8,7 +8,7 @@ import AccountCircleRoundedIcon from '@material-ui/icons/AccountCircleRounded';
 
 const useStyles = makeStyles({
   root: {
-    width: 500,
+    width: "1",
   },
 });
 
