@@ -1,8 +1,8 @@
 const Categories = () => (
-  <div className="container overflow-auto">
+  <div className="container ">
+    <h5 className="text-success">Buat Kamu</h5>
     <div className="row">
-      <div className="col">
-        <h5 className="text-success">Buat Kamu</h5>
+      <div className="col overflow-auto">
         <ul class="list-group list-group-horizontal">
           <li class="list-group-item">Apa aja</li>
           <li class="list-group-item">Rekomendasi PTN/PTS</li>
