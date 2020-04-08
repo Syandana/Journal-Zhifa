@@ -5,14 +5,14 @@ const Cards = () => (
       <div className="col-6">
         <div class="card">
           <div class="card-body">
-            <h3 className="card-title">Melankolis</h3>
+            <h4 className="card-title">Melankolis</h4>
           </div>
         </div>
       </div>
       <div className="col-6">
         <div class="card">
           <div class="card-body">
-            <h3 className="card-title">Melankolis</h3>
+            <h4 className="card-title">Melankolis</h4>
           </div>
         </div>
       </div>
