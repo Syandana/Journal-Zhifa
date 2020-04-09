@@ -22,7 +22,7 @@ function NavigationBottom() {
 
   return (
     <div className="fixed-bottom">
-      <BottomNavigation value={value} onChange={(event, newValue) => { setValue(newValue); }} showLabels className={classes.root}>
+      <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
         <BottomNavigationAction label="Beranda" icon={<HomeRoundedIcon />} />
         <BottomNavigationAction label="Jurnal saya" icon={<MenuBookRoundedIcon />} />
         <BottomNavigationAction label="Artikel" icon={<DescriptionRoundedIcon />} />
