@@ -7,8 +7,7 @@ const DailyChallange = () => (
         <p className="text-center"><ConfirmationNumberIcon style={{ fontSize: 100 }} /></p>
       </div>
       <div className="col my-auto">
-        <h4 className="text-center">Ikuti daily challange dan dapatkan tiket seminar GRATIS!</h4>
-        <a className="btn btn-light">Ikut dong</a>
+        <h5 className="text-left">Ikuti daily challange dan dapatkan tiket seminar GRATIS!</h5>
       </div>
     </div>
   </div>

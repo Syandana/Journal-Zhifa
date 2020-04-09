@@ -2,19 +2,13 @@ const Cards = () => (
   <div className="container overflow-auto">
     <h5 className="text-success">Mana nih yang kamu banget?</h5>
     <div className="row">
-      <div className="col-6">
-        <div class="card">
-          <div class="card-body">
-            <h4 className="card-title">Melankolis</h4>
-          </div>
-        </div>
-      </div>
-      <div className="col-6">
-        <div class="card">
-          <div class="card-body">
-            <h4 className="card-title">Melankolis</h4>
-          </div>
-        </div>
+      <div className="col overflow-auto">
+        <ul class="list-group list-group-horizontal">
+          <li class="list-group-item">Plegmatis</li>
+          <li class="list-group-item">Melankolis</li>
+          <li class="list-group-item">Sanguin</li>
+          <li class="list-group-item">Koleris</li>
+        </ul>
       </div>
     </div>
   </div>
