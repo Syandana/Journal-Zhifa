@@ -22,20 +22,20 @@ function Index() {
           </div>
         </div>
         <div className="row text-center">
-          <div className="col-sm">
+          <div className="col-sm-12 col-lg-4 mx-auto">
             <form noValidate autoComplete="off">
-              <TextField fullWidth
-                margin="normal" id="outlined" label="Username" variant="outlined" /><br />
-              <TextField fullWidth
-                margin="normal" id="outlined" label="Passwordnya" variant="outlined" />
+              <TextField fullWidth margin="normal" id="outlined" label="Username" variant="outlined" /><br />
+              <TextField fullWidth margin="normal" id="outlined" label="Passwordnya" variant="outlined" />
             </form>
-          </div>
-          <div className="col-sm">
+            <br />
             <Link href="/index">
               <Button fullWidth variant="outlined" color="primary" disableElevation>
                 Masuk
               </Button>
             </Link>
+          </div>
+          <div className="col-12">
+            
           </div>
 
         </div>
