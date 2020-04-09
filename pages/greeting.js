@@ -21,7 +21,7 @@ function Index() {
             <h1>Hi!</h1>
             <img src="/char1.svg"></img>
             <h4>Kenali dirimu<br/>sekarang juga</h4>
-            <Link href="/index">
+            <Link href="/login">
               <Button variant="outlined" color="primary" disableElevation>
                 Mulai Sekarang
               </Button>
