@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import NavigationBottom from './NavigationBottom'
 import Button from '@material-ui/core/Button';
 
 const Layout = (props) => (
@@ -13,7 +12,7 @@ const Layout = (props) => (
     <div>
       {props.children}
     </div>
-    <NavigationBottom/>
+    
   </div>
 )
 

@@ -4,6 +4,7 @@ import Search from '../components/Search'
 import BannerTop from '../components/BannerTop'
 import Categories from '../components/Categories'
 import DailyChallange from '../components/DailyChallange'
+import NavigationBottom from '../components/NavigationBottom'
 import Button from '@material-ui/core/Button'
 
 function Index() {
@@ -18,6 +19,7 @@ function Index() {
       <Cards />
       <br />
       <DailyChallange />
+      <NavigationBottom/>
     </Layout>
   )
 };
