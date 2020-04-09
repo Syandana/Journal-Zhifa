@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import BottomNavigation from '@material-ui/core/BottomNavigation'
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import { makeStyles } from '@material-ui/core/styles';
@@ -23,10 +24,10 @@ function NavigationBottom() {
   return (
     <div className="fixed-bottom">
       <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
-        <BottomNavigationAction label="Beranda" icon={<HomeRoundedIcon />} />
+        <Link href="/index"><BottomNavigationAction label="Beranda" icon={<HomeRoundedIcon />} /></Link>
         <BottomNavigationAction label="Jurnal saya" icon={<MenuBookRoundedIcon />} />
         <BottomNavigationAction label="Artikel" icon={<DescriptionRoundedIcon />} />
-        <BottomNavigationAction label="Akun" icon={<AccountCircleRoundedIcon />} />
+        <Link href="/login"><BottomNavigationAction label="Akun" icon={<AccountCircleRoundedIcon />} /></Link>
       </BottomNavigation>
     </div>
   )
