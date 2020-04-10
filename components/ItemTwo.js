@@ -1,5 +1,4 @@
 import React from 'react';
-import Layout from '../components/Layout'
 import BannerTop from '../components/BannerTop'
 import NavigationBottom from '../components/NavigationBottom'
 import { makeStyles } from '@material-ui/core/styles'
@@ -50,8 +49,7 @@ function Index() {
   };
 
   return (
-    <Layout>
-      <br />
+    <div>
       <BannerTop />
       <br />
       <div className="container">
@@ -158,7 +156,7 @@ function Index() {
         </div>
       </div>
       <NavigationBottom />
-    </Layout>
+    </div>
   )
 };
 

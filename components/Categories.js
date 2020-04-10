@@ -1,14 +1,27 @@
 const Categories = () => (
   <div className="container ">
     <h5 className="text-success">Buat Kamu</h5>
+
     <div className="row">
-      <div className="col overflow-auto">
-        <ul class="list-group list-group-horizontal">
-          <li class="list-group-item">Apa aja</li>
-          <li class="list-group-item">Rekomendasi PTN/PTS</li>
-          <li class="list-group-item">Seminar Online</li>
-          <li class="list-group-item">Tes Kepribadian</li>
-        </ul>
+      <div className="col text-center btn mx-1 bg-success">
+        <i class="fas fa-peace text-white fa-lg"></i>
+        <br />
+        <p className="statusName text-white">Apa aja</p>
+      </div>
+      <div className="col text-center btn mx-1 bg-success">
+        <i class="fas fa-hand-sparkles text-white fa-lg"></i>
+        <br />
+        <p className="statusName text-white">Rekomendasi PTN/PTS</p>
+      </div>
+      <div className="col text-center btn mx-1 bg-success">
+        <i class="fas fa-fire text-white fa-lg"></i>
+        <br />
+        <p className="statusName text-white">Seminar Online</p>
+      </div>
+      <div className="col text-center btn mx-1 bg-success">
+        <i class="fas fa-fist-raised text-white fa-lg"></i>
+        <br />
+        <p className="statusName text-white">Tes Kepribadian</p>
       </div>
     </div>
   </div>
