@@ -1,7 +1,7 @@
 function Cards() {
 
   return (
-    <div className="container overflow-auto">
+    <div className="container">
       <div className="row">
         <div className="col">
           <h5 className="text-success">Mana nih yang kamu banget?</h5>

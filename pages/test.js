@@ -75,8 +75,9 @@ export default function SimpleTabs() {
       <TabPanel value={value} index={3}>
         <ItemFour />
       </TabPanel>
-      <div className="fixed-bottom">
-        <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
+
+      <div className="border fixed-bottom">
+        <BottomNavigation showLabels value={value} onChange={handleChange} className={classes.root}>
           <BottomNavigationAction label="Beranda" icon={<HomeRoundedIcon />} />
           <BottomNavigationAction label="Jurnal saya" icon={<MenuBookRoundedIcon />} />
           <BottomNavigationAction label="Artikel" icon={<DescriptionRoundedIcon />} />

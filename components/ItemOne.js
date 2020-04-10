@@ -6,7 +6,7 @@ import DailyChallange from '../components/DailyChallange'
 
 function ItemOne() {
   return (
-    <div>
+    <div className="border">
       <BannerTop />
       <Search />
       <br />
