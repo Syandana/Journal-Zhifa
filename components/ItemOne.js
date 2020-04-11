@@ -6,15 +6,18 @@ import DailyChallange from '../components/DailyChallange'
 
 function ItemOne() {
   return (
-    <div className="border">
+    <div>
       <BannerTop />
       <Search />
       <br />
+      <h5 className="text-success">Buat Kamu</h5>
       <Categories />
       <br />
+      <h5 className="text-success">Mana nih yang kamu banget?</h5>
       <Cards />
       <br />
       <DailyChallange />
+      <br />
     </div>
   )
 };

@@ -10,11 +10,14 @@ import AccountCircleRoundedIcon from '@material-ui/icons/AccountCircleRounded';
 
 import BottomNavigation from '@material-ui/core/BottomNavigation'
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
 
 import Layout from '../components/Layout'
 import ItemOne from '../components/ItemOne'
 import ItemTwo from '../components/ItemTwo'
 import ItemFour from '../components/ItemFour'
+import Login from '../components/Login'
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -49,6 +52,7 @@ function a11yProps(index) {
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    width: '100%',
     backgroundColor: theme.palette.background.paper,
   },
 }));
@@ -70,14 +74,16 @@ export default function SimpleTabs() {
         <ItemTwo />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+        <div className="border">
+          Item Three
+        </div>
       </TabPanel>
       <TabPanel value={value} index={3}>
-        <ItemFour />
+        <Login />
       </TabPanel>
 
       <div className="border fixed-bottom">
-        <BottomNavigation showLabels value={value} onChange={handleChange} className={classes.root}>
+        <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
           <BottomNavigationAction label="Beranda" icon={<HomeRoundedIcon />} />
           <BottomNavigationAction label="Jurnal saya" icon={<MenuBookRoundedIcon />} />
           <BottomNavigationAction label="Artikel" icon={<DescriptionRoundedIcon />} />

@@ -1,30 +1,46 @@
-const Categories = () => (
-  <div className="container border">
-    <h5 className="text-success">Buat Kamu</h5>
+import CardHeader from '@material-ui/core/CardHeader';
+import React from 'react';
+import Box from '@material-ui/core/Box';
+import CardMedia from '@material-ui/core/CardMedia';
+import { useCoverCardMediaStyles } from '@mui-treasury/styles/cardMedia/cover';
 
-    <div className="row">
-      <div className="col text-center btn mx-1 bg-success">
-        <i className="fas fa-peace text-white fa-lg"></i>
-        <br />
-        <p className="statusName text-white">Apa aja</p>
-      </div>
-      <div className="col text-center btn mx-1 bg-success">
-        <i className="fas fa-hand-sparkles text-white fa-lg"></i>
-        <br />
-        <p className="statusName text-white">Rekomendasi PTN/PTS</p>
-      </div>
-      <div className="col text-center btn mx-1 bg-success">
-        <i className="fas fa-fire text-white fa-lg"></i>
-        <br />
-        <p className="statusName text-white">Seminar Online</p>
-      </div>
-      <div className="col text-center btn mx-1 bg-success">
-        <i className="fas fa-fist-raised text-white fa-lg"></i>
-        <br />
-        <p className="statusName text-white">Tes Kepribadian</p>
+function Categories() {
+  //const styles = useContainedCardHeaderStyles();
+  const styles = useCoverCardMediaStyles();
+  return (
+    <div className="container border">
+      <div className="row">
+        <div className="col">
+          <CardHeader
+            title="Desserts"
+            subheader="Select your favourite"
+          />
+        </div>
+        <Box position={'relative'} width={'100%'} height={'100%'} p={2}>
+          <CardMedia
+            // component={'img'} // add this line to use <img />
+            // image={"src"}
+            classes={styles}
+          />
+          <Box position={'relative'}>
+            <h3>Placeholder</h3>
+            <p>To show that the image is a cover.</p>
+          </Box>
+        </Box>
+        <div className="col-sm text-center btn bg-success">
+          <i className="fas fa-fire text-white fa-lg"></i>
+          <br />
+          <p className="statusName text-white">Seminar Online</p>
+        </div>
+        <div className="col-sm text-center btn bg-success">
+          <i className="fas fa-fist-raised text-white fa-lg"></i>
+          <br />
+          <p className="statusName text-white">Tes Kepribadian</p>
+        </div>
       </div>
     </div>
-  </div>
-)
+
+  )
+}
 
 export default Categories

@@ -30,21 +30,15 @@ export default function CustomizedInputBase() {
   const classes = useStyles();
 
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col">
-          <Paper component="form" className={classes.root}>
-            <InputBase
-              className={classes.input}
-              placeholder="Mau Cari Apa?"
-              inputProps={{ 'aria-label': 'search google maps' }}
-            />
-            <IconButton type="submit" className={classes.iconButton} aria-label="search">
-              <SearchIcon />
-            </IconButton>
-          </Paper>
-        </div>
-      </div>
-    </div>
+    <Paper component="form" className={classes.root}>
+      <InputBase
+        className={classes.input}
+        placeholder="Mau Cari Apa?"
+        inputProps={{ 'aria-label': 'search google maps' }}
+      />
+      <IconButton type="submit" className={classes.iconButton} aria-label="search">
+        <SearchIcon />
+      </IconButton>
+    </Paper>
   );
 }
