@@ -64,7 +64,7 @@ function Check() {
                     inputProps={{ 'aria-labelledby': labelId }}
                   />
                 </ListItemIcon>
-                <ListItemText id={labelId} primary={`Line item ${value + 1}`} />
+                <ListItemText id={labelId} primary={`Tugas ${value + 1}`} />
               </ListItem>
             );
           })}

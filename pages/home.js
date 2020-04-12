@@ -16,6 +16,7 @@ import Tab from '@material-ui/core/Tab';
 import Layout from '../components/Layout'
 import ItemOne from '../components/ItemOne'
 import ItemTwo from '../components/ItemTwo'
+import ItemThree from '../components/ItemThree'
 import ItemFour from '../components/ItemFour'
 import Login from '../components/Login'
 
@@ -74,9 +75,7 @@ export default function SimpleTabs() {
         <ItemTwo />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <div className="border">
-          Item Three
-        </div>
+        <ItemThree />
       </TabPanel>
       <TabPanel value={value} index={3}>
         <Login />
