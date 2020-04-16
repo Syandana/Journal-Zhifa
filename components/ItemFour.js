@@ -14,7 +14,7 @@ const useStyles = makeStyles({
 function Index() {
   const classes = useStyles();
   return (
-    <Layout>
+    <div>
       <div className="container">
         <div className="row">
           <div className="col">
@@ -40,7 +40,7 @@ function Index() {
 
         </div>
       </div>
-    </Layout>
+    </div>
   )
 };
 

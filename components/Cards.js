@@ -1,18 +1,38 @@
-const Cards = () => (
-  <div className="container overflow-auto">
-    <h5 className="text-success">Mana nih yang kamu banget?</h5>
-    <div className="row">
-      <div className="col overflow-auto">
-        <ul class="list-group list-group-horizontal">
-          <li class="list-group-item">Plegmatis</li>
-          <li class="list-group-item">Melankolis</li>
-          <li class="list-group-item">Sanguin</li>
-          <li class="list-group-item">Koleris</li>
-        </ul>
-      </div>
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  },
+}));
+
+export default function CenteredGrid() {
+  const classes = useStyles();
+
+  return (
+    <div className={classes.root}>
+      <Grid container spacing={1}>
+        <Grid item xs={6}>
+          <Paper className={classes.paper}>Plegmatis</Paper>
+        </Grid>
+        <Grid item xs={6}>
+          <Paper className={classes.paper}>Melankolis</Paper>
+        </Grid>
+        <Grid item xs={6}>
+          <Paper className={classes.paper}>Sanguinis</Paper>
+        </Grid>
+        <Grid item xs={6}>
+          <Paper className={classes.paper}>Koleris</Paper>
+        </Grid>
+      </Grid>
     </div>
-  </div>
-
-)
-
-export default Cards
+  );
+}

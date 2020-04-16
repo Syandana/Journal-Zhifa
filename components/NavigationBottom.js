@@ -25,7 +25,7 @@ function NavigationBottom() {
     <div className="fixed-bottom">
       <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
         <Link href="/index"><BottomNavigationAction label="Beranda" icon={<HomeRoundedIcon />} /></Link>
-        <BottomNavigationAction label="Jurnal saya" icon={<MenuBookRoundedIcon />} />
+        <Link href="/jurnal-saya"><BottomNavigationAction label="Jurnal saya" icon={<MenuBookRoundedIcon />} /></Link>
         <BottomNavigationAction label="Artikel" icon={<DescriptionRoundedIcon />} />
         <Link href="/login"><BottomNavigationAction label="Akun" icon={<AccountCircleRoundedIcon />} /></Link>
       </BottomNavigation>
