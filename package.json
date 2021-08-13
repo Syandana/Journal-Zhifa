@@ -16,7 +16,7 @@
     "@mui-treasury/utils": "^0.4.0",
     "jquery": "^3.4.1",
     "material-auto-rotating-carousel": "^3.0.2",
-    "next": "9.3.4",
+    "next": "11.1.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-swipeable-views": "^0.13.9"
